@@ -13,8 +13,9 @@ export default function Home() {
       {/* NAVIGATION */}
       <nav className="fixed w-full z-50 border-b border-slate-900 bg-[#070a12]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold tracking-[0.2em] text-white flex items-center gap-2">
-            SUB-INFINITY <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          <div className="flex items-center gap-4">
+            <img src="/logo-icon.png" alt="Sub-Infinity Icon" className="h-8 w-auto" />
+            <img src="/logo-text.png" alt="Sub-Infinity Text" className="h-6 w-auto hidden md:block" />
           </div>
           
           <div className="hidden md:flex space-x-8 text-xs tracking-widest uppercase text-slate-400">
@@ -54,9 +55,13 @@ export default function Home() {
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-8 text-[10px] tracking-[0.3em] uppercase border border-amber-500/20 rounded-full bg-amber-500/5 text-amber-400">
             <span>SCIENTIFIC INFRASTRUCTURE</span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-light tracking-[0.15em] text-white mb-8">
-            SUB<span className="text-amber-400 font-normal">─</span>INFINITY
-          </h1>
+          <div className="flex flex-col items-center mb-10">
+            {/* The Big Infinity Icon */}
+            <img src="/logo-icon.png" alt="Sub-Infinity" className="w-32 md:w-48 h-auto mb-6 opacity-90" />
+  
+            {/* The Pi Typography Wordmark */}
+            <img src="/logo-text.png" alt="Sub-Infinity Title" className="w-64 md:w-[450px] h-auto" />
+          </div>
           <p className="text-lg md:text-xl font-medium tracking-wide text-slate-200 mb-6 max-w-3xl mx-auto">
             Physics infrastructure for the next generation of discovery.
           </p>
