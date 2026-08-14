@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center mb-10">
             {/* The Big Infinity Icon */}
-            <img src="/logo-icon-new-symbol.png" alt="Sub-Infinity" className="w-48 md:w-72 h-auto mb-6 opacity-90" />
+            <img src="/logo-icon-new-symbol.png" alt="Sub-Infinity" className="w-64 md:w-96 h-auto mb-6 opacity-90" />
   
             {/* The Pi Typography Wordmark */}
             <img src="/logo-text.png" alt="Sub-Infinity Title" className="w-64 md:w-[450px] h-auto" />
