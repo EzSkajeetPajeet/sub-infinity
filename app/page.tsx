@@ -432,9 +432,9 @@ export default function Home() {
       {/* NAVIGATION */}
       <nav className="fixed w-full z-50 border-b border-white/5 bg-[#070a12]/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <img src="/logo-icon-new-symbol.png" alt="Sub-Infinity Icon" className="h-10 w-auto" />
-            <img src="/logo-text.png" alt="Sub-Infinity Text" className="h-6 w-auto hidden md:block" />
+          <div className="flex items-center gap-3 bg-[#f7f3e8] rounded-md px-3 py-1.5 border border-[#e8e0cc] shadow-sm">
+            <img src="/logo-icon-new-symbol.png" alt="Sub-Infinity Icon" className="h-8 w-auto" />
+            <img src="/logo-text.png" alt="Sub-Infinity Text" className="h-5 w-auto hidden md:block" />
           </div>
 
           <div className="hidden md:flex space-x-8 text-xs tracking-widest uppercase text-slate-400">
@@ -487,8 +487,10 @@ export default function Home() {
           </div>
 
           <div className="reveal-scale flex flex-col items-center mb-10">
-            <img src="/logo-icon-new-symbol.png" alt="Sub-Infinity" className="w-64 md:w-96 h-auto mb-6 opacity-90 drop-shadow-[0_0_40px_rgba(251,191,36,0.15)]" />
-            <img src="/logo-text.png" alt="Sub-Infinity Title" className="w-64 md:w-[450px] h-auto" />
+            <div className="flex flex-col items-center bg-[#f7f3e8] rounded-2xl px-8 py-8 md:px-12 md:py-10 border border-[#e8e0cc] shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+              <img src="/logo-icon-new-symbol.png" alt="Sub-Infinity" className="w-56 md:w-80 h-auto mb-6" />
+              <img src="/logo-text.png" alt="Sub-Infinity Title" className="w-64 md:w-[430px] h-auto" />
+            </div>
           </div>
 
           <p className="reveal text-lg md:text-xl font-medium tracking-wide text-white mb-6 max-w-3xl mx-auto" style={{ ['--reveal-delay' as string]: '100ms' }}>
@@ -814,9 +816,14 @@ export default function Home() {
             <button className="w-full sm:w-auto border border-slate-800 text-slate-300 px-8 py-3 rounded text-xs font-medium tracking-widest uppercase hover:bg-slate-900 transition-colors">
               Contact Sub-Infinity
             </button>
-            <button className="w-full sm:w-auto text-amber-400/80 px-4 py-3 rounded text-xs font-mono hover:text-amber-300 transition-colors">
+            <a
+              href={process.env.NEXT_PUBLIC_PROTOTYPE_URL ?? "http://localhost:5173"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto text-amber-400/80 px-4 py-3 rounded text-xs font-mono hover:text-amber-300 transition-colors"
+            >
               [ View Prototype ]
-            </button>
+            </a>
           </div>
         </div>
       </section>
